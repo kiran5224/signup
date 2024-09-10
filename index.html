@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS</title>
+    <style>
+        body{
+            width: 420px;
+            display: block  ;
+        }
+        .mytab{
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+
+        }
+        nav{
+            display: block;
+            justify-content: right;
+            align-items: right;
+            padding-left: 6px;
+            padding-right: 6px;
+            background-color: aqua;
+            color : black
+        }
+        .myinput{
+            display:block;
+            justify-content: center;
+            align-items: center;
+            width: 420px;
+            background-color: rgb(199, 199, 28);
+           
+            
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <table class="mytab">
+        <tr>
+            <td>
+                <h1>CARS COLLECTION</h1>
+            </td>
+    <td>
+        <nav>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+        <a href="#rate">rate</a>
+    </nav>
+   </td>
+</tr>
+</table>
+    
+    <form action="day9.html" method="post">
+    <div class="myinput">
+
+        <label for="first">firstname</label>
+        <input type="text" id="first" name="first" required/>
+
+        <label for="last">lastname</label>
+        <input type="text" id="last" name="last" required/>
+
+        <label for="password">password</label>
+        <input type="password" id="password" name="password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,}" required/>
+        
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" pattern="[a-z0-9._]+@[a-z]+\.[a-z]+" required>
+
+        <button type="submit">submit</button>
+
+        <a href="day9iii.html">forgotpassword</a>
+
+    </div>
+
+    </form>
+    
+    
+</body>
+</html>
